@@ -11,38 +11,47 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
+    background-color: purple;
+    /* background: url() no-repeat;
+    background-size: cover;
+    background-position: center; */
 }
 
 .container {
     position: absolute;
-    flex-shrink: 1;
-    background-color: brown;
-    min-width: 420px;
+    border-radius: 10px;
+    padding: 30px 40px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     color: #fff;
+    min-width: 480px;
 }
 
 .container h1 {
+    position: relative;
     text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
 }
 
 .container .inputBox {
     position: relative;
-    width: 100%;
     height: 40px;
     margin: 20px 0px;
+    border: 2px solid rgb(219, 191, 191, .2);
+    border-radius: 40px;
+    padding: 0px 0px 0px 20px;
+
 }
 
 .inputBox input {
-    position: relative;
-    width: 100%;
     height: 100%;
+    border: none;
     background: transparent;
     outline: none;
-    border: 2px solid rgb(219, 191, 191, .2);
-    border-radius: 40px;
     font-size: 16px;
-    padding-left: 10px;
 }
 
 .inputBox input::placeholder {
@@ -55,4 +64,47 @@ body {
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
+}
+
+.rememberForgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.rememberForgot label input {
+    accent-color: #fff;
+
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.signupLoginLink {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
